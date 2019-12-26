@@ -1,0 +1,7 @@
+node_modules/
+/package-lock.json
+.idea
+/logs
+/yarn-lock.json
+.vscode
+.DS_Store

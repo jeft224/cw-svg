@@ -1,0 +1,27 @@
+{
+  "name": "cw-svg",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "svg",
+  "scripts": {
+    "build":"npx @svgr/cli -d src svg"
+  },
+  "keywords": [
+    "svg",
+    "svgr",
+    "react"
+  ],
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./transform.js && git add ./index.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.7.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^4.1.0",
+    "husky": "^3.1.0"
+  }
+}
