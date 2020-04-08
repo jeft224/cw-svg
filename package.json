@@ -4,7 +4,8 @@
   "main": "index.js",
   "description": "svg",
   "scripts": {
-    "build":"npx @svgr/cli -d src svg"
+    "build": "npx @svgr/cli -d src svg",
+    "cz": "git-cz"
   },
   "keywords": [
     "svg",
@@ -22,6 +23,13 @@
   },
   "devDependencies": {
     "@svgr/cli": "^4.1.0",
-    "husky": "^3.1.0"
+    "husky": "^3.1.0",
+    "commitizen": "^4.0.4",
+    "cz-conventional-changelog": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
